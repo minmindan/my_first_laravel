@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            text-align: center;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        *{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .top{
+            width: 100%;
+            height: 50px;
+            background-color: aqua;
+            position: relative;
+            position: sticky;
+            top:0;
+            }
+        .leftbox{
+            width: 25%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            float: left;
+            
+        }
+        .midbox{
+            width: 50%;
+            height: 50px;
+            float: left;
+            background-color: white;
+        }
+        .rightbox{
+            width: 25%;
+            height: 100%;
+            float: right;
+            background-color: rgb(255, 255, 255);
+        }
+        .searchbox{
+            width: 60%;
+            height: 100%;
+            float: right;
+            margin: 0 20% 0 0;
+            background-color: rgb(241,242,246);
+            border-radius: 25px;
+            position: relative;
+            outline-style: none ;
+            border: 0px;
+        }
+        .more,.bell,.messager,.ninedot{
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        .more{
+            width: 40px;
+            height: 40px;
+            background-image: url(/FaceBook/FB用icon/more.jpg);
+            float: right;
+            object-fit:cover;
+            margin: 0 0 0 15px;
+        }
+        .bell{
+            width: 40px;
+            height: 40px;
+            background-image: url(/FaceBook/FB用icon/bell.jpg);
+            float: right;
+            margin: 0 0 0 15px;
+        }
+        .messager{
+            width: 40px;
+            height: 40px;
+            background-image: url(/FaceBook/FB用icon/messager.jpg);
+            float: right;
+            margin: 0 0 0 15px;
+        }
+        .ninedot{   
+            width: 40px;
+            height: 40px;
+            background-image: url(/FaceBook/FB用icon/ninedot.jpg);
+            float: right;
+            margin: 0 0 0 15px;
+        }
+        .fb_logo{   
+            width: 40px;
+            height: 40px;
+            background-image: url(/FaceBook/FB用icon/fb_logo.jpg);
+            float: left;
+            margin: 0 5px 0 5px;
+        }
+        .search{   
+            width: 40px;
+            height: 40px;
+            background-image: url(/FaceBook/FB用icon/search.jpg);
+            float: left;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .fb_watch{   
+            width: 50px;
+            height: 50px;
+            background-image: url(/FaceBook/FB用icon/fb_watch.jpg);
+            position: absolute;
+            top: 50%;left: 50%;
+            transform: translate(-50%,-50%);
+            cursor: pointer;
+        }
+        .friends{   
+            width: 50px;
+            height: 50px;
+            background-image: url(/FaceBook/FB用icon/friends.jpg);
+            position: absolute;
+            top: 50%;left: 42.5%;
+            transform: translate(-50%,-50%);
+            cursor: pointer;
+        }
+        .homepage{   
+            width: 50px;
+            height: 50px;
+            background-image: url(/FaceBook/FB用icon/homepage.jpg);
+            position: absolute;
+            top: 50%;left: 35%;
+            transform: translate(-50%,-50%);
+            cursor: pointer;
+        }
+        .shop{   
+            width: 50px;
+            height: 50px;
+            background-image: url(/FaceBook/FB用icon/shop.jpg);
+            position: absolute;
+            top: 50%;left: 57.5%;
+            transform: translate(-50%,-50%);
+            cursor: pointer;
+        }
+        .group{   
+            width: 50px;
+            height: 50px;
+            background-image: url(/FaceBook/FB用icon/group.jpg);
+            position: absolute;
+            top: 50%;left: 65%;
+            transform: translate(-50%,-50%);
+            cursor: pointer;
+        }
+        .home{
+            width: 70%;
+            height: 400px;
+            background-color: rgb(182, 39, 110);
+            position: center;
+            margin: 0px auto;
+            border-radius: 0 0 10px 10px;
+            position: relative;
+            clear: both;
+        }
+        .ata{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border-radius: 50%;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-style: solid;
+            color: white;
+        }
+        .edimg{
+            width: 200px;
+            height: 60px;
+            background-color: aliceblue;
+            border-radius: 20px;
+            position: absolute;
+            right: 50px;
+            bottom: 20px;
+        }
+        .user{
+            margin-top: 150px;
+            font-size: 24px;
+            font-weight: bolder;
+        }
+        .JS{
+            margin-top: 7px;
+            color: blue;
+            font-size: 16px;
+        }
+        .JS::after{
+            width: 60%;
+            height: 2px;
+            display: block;
+            background-color: gray;
+            margin: 20px auto;
+            content: "";
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="leftbox">
+            <img src="/FaceBook/FB用icon/fb_logo.jpg" alt="" style="cursor: pointer;">
+            <!-- <div class="fb_logo"></div> -->
+            
+            <div class="searchbox">
+                <div class="search" style="border-radius:20px;"></div>
+                <input type="text" placeholder="搜尋FACEBOOK"class="searchbox" style="padding: 0; margin: 0 0 0 5;">
+            </div>
+        </div>
+        <div class="midbox">
+            <div class="fb_watch"></div>
+            <div class="friends"></div>
+            <div class="homepage"></div>
+            <div class="shop"></div>
+            <div class="group"></div>
+        </div>
+            <div class="rightbox">
+            <div class="more"></div>
+            <div class="bell"></div>
+            <div class="messager"></div>
+            <div class="ninedot"></div>
+        </div>
+    </div>
+    <div class="home">
+        <div class="ata"></div>
+        <div class="edimg">
+            <img src="/FaceBook/FB用icon/camera.jpg" alt="" style="width: 45px; height: 45px;border-radius: 20px;position: absolute ;top: 50% ;left: 5%;transform: translateY(-50%);">
+            <p style="font-size :20px;align-items: center;line-height: 20px;padding: 0 0 0 20px;">編輯封面相片</p>
+        </div>
+    </div>
+    <div class="user">洪資閔</div>
+    <div class="JS">新增個人簡介</div>
+</body>
+</html>
