@@ -77,7 +77,16 @@ class ShoppingcardController extends Controller
         //     'author' => $request->title,
         //     'time' => '',
         // ]);
-        return redirect('/img');
+        return  ('/img');
+    }
+
+    public function april23(){
+        $beta = DB::table('da')->get();
+        return view('april23_upload',['beta'=>$beta]);
+    }
+
+    public function image_save(){
+        //
     }
 }
 // DB::table -> Comment::
