@@ -84,8 +84,6 @@ Route::get('/checkout',[ShoppingcardController::class,'checkout']);
 
 Route::get('/img/save',[ShoppingcardController::class,'save']);
 
-Route::get('/april23/save',[BannerController::class,'april23_save']);
-
 // Route::get('/april23_upload',[ShoppingcardController::class,'april23']);
 
 Route::resource('/april23',BannerController::class);

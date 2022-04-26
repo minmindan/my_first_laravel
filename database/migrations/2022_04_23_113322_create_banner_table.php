@@ -17,9 +17,9 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->
-            $table->integer('weight');
-            $table->float('opacity');
+            $table->string('image')->nullable;
+            $table->integer('weight')->nullable;
+            $table->float('opacity')->nullable;
 
         });
     }
