@@ -8,6 +8,9 @@
 @endsection
 @section('css')
   <style>
+      body{
+          background-color: white;
+      }
     .swiper {
       width: 100%;
       height: 100%;
